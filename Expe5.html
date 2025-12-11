@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <header align="center">
+        <hr>
+        <h1>Student Registration Form</h1>
+        <hr>
+    </header>
+    
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email address" required>
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="Enter Password" required>
+        <br><br>
+        <label for="gender">Gender: </label>
+        
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="course">Course:</label>
+        <select id="course">
+            <option value="">-- Select Course --</option>
+            <option value="cse">CSE Core</option>
+            <option value="cseaiml">CSE AILM</option>
+            <option value="cseds">CSE DS</option>
+            <option value="eee">EEE</option>
+            <option value="ece">ECE</option>
+            <option value="elce">ELCE</option>
+        </select>
+        <br><br>
+        <label for="contact">Contact No:</label>
+        <input type="tel" id="contact" placeholder="Enter Phone Number" required>
+        <br><br>
+        <label>Address:</label><br>
+        <textarea placeholder="Enter Your Address..."></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+        <hr>
+
+    </form>
+   
+    <footer align="center">
+        <p>&copy; 2025 Student Registration Portal</p>
+        <hr>
+    </footer>
+</body>
+</html>
