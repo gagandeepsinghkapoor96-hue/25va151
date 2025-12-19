@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Food Website </title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+font-family: arial;
+scroll-behavior:smooth;
+}
+
+/* header */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:black;
+color:white;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin-left:18px;
+text-decoration:none;
+}
+
+/* hero section */
+.hero{
+height:85vh;
+background:url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{font-size:48px;}
+
+.hero button{
+margin-top:12px;
+padding:12px 30px;
+border:none;
+cursor:pointer;
+font-size:18px;
+background:#ff9800;
+border-radius:5px;
+}
+
+/* menu */
+.menu-section{
+padding:50px;
+text-align:center;
+}
+
+.menuBox{
+display:flex;
+gap:40px;
+margin-top:25px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.food{
+width:220px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+padding:10px;
+}
+
+.food img{
+width:100%;
+}
+
+/* about */
+.aboutSection{
+text-align:center;
+padding:50px;
+}
+
+/* contact */
+.contact-area{
+text-align:center;
+padding:50px;
+background:#f5f5f5;
+}
+
+/* footer */
+footer{
+background:black;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+/* responsive */
+@media (max-width:800px){
+.menuBox{
+flex-direction:column;
+align-items:center;
+}
+header{
+flex-direction:column;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo"> FoodHub </div>
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contactus">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h1> Welcome To FoodHub </h1>
+<p>Best quality tasty fast food 😋</p>
+<button onclick="openMenu()">Order Now</button>
+</section>
+
+<section class="menu-section" id="menu">
+<h2> Our Fast Food Menu </h2>
+
+<div class="menuBox">
+
+<div class="food">
+<img src="https://via.placeholder.com/200">
+<h3>Pizza</h3>
+<p>Cheese Burst Pizza</p>
+</div>
+
+<div class="food">
+<img src="https://via.placeholder.com/200">
+<h3>Burger</h3>
+<p>Double Patty Burger</p>
+</div>
+
+<div class="food">
+<img src="https://via.placeholder.com/200">
+<h3>French Fries</h3>
+<p>Crispy Salted Fries</p>
+</div>
+
+<div class="food">
+<img src="https://via.placeholder.com/200">
+<h3>Sandwich</h3>
+<p>Grilled Veg Sandwich</p>
+</div>
+
+<div class="food">
+<img src="https://via.placeholder.com/200">
+<h3>Momos</h3>
+<p>Steam Hot Momos</p>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="aboutSection">
+<h2> About Us </h2>
+<p>
+Normal sa restaurant hai,<br>
+fresh ingredients use karte hain,<br>
+customer ko best dene ki koshish karte hain.
+</p>
+</section>
+
+<section class="contact-area" id="contactus">
+<h2> Contact Us </h2>
+<p><strong>Name:</strong> Gagan Deep</p>
+<p><strong>Location:</strong> ABES College</p>
+<p><strong>Phone:</strong> 9899128652</p>
+<p><strong>Email:</strong> foodhub@gmail.com</p>
+</section>
+
+<footer>
+© 2025 FoodHub | All Rights Reserved
+</footer>
+
+<script>
+function openMenu(){
+document.getElementById("menu").scrollIntoView();
+}
+</script>
+
+</body>
+</html>
